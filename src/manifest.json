@@ -1,0 +1,23 @@
+{
+    "name": "choge-blog-bypass-ad-blocking-detection",
+    "description": "choge-blog.comのadblock検出を無効化する",
+    "version": "1.0.0",
+    "manifest_version": 3,
+    "action": {
+        "default_popup": "html/popup.html"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://choge-blog.com/*",
+                "https://www.choge-blog.com/*"
+            ],
+            "js": [
+                "js/main.js"
+            ],
+            "css": [
+                "css/main.css"
+            ]
+        }
+    ]
+}
